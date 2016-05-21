@@ -1,0 +1,3 @@
+FILE(REMOVE_RECURSE
+  "libState_RZ_AMI.a"
+)

@@ -1,0 +1,38 @@
+cmake_minimum_required(VERSION 2.8) # Проверка версии CMake.
+									# Если версия установленой программы
+project (AIPPS2)
+
+set(SOURCE_EXE main.cpp)
+#set(SOURCE_LIB BaseState.cpp)
+#set(SOURCE_LIB Coder.cpp)
+set(SOURCE_LIB Facade.cpp)
+add_library(Facade STATIC ${SOURCE_LIB})
+set(SOURCE_LIB Coder.cpp)
+add_library(Coder STATIC ${SOURCE_LIB})
+add_library(State_Bi_f_L STATIC ${SOURCE_LIB})
+add_library(BaseState STATIC ${SOURCE_LIB})
+add_library(State_Bi_f_M STATIC ${SOURCE_LIB})
+add_library(State_Bi_f_S STATIC ${SOURCE_LIB})
+add_library(State_Bipolar_RZ ${SOURCE_LIB})
+add_library(State_NRZ_L ${SOURCE_LIB})
+add_library(State_NRZ_M ${SOURCE_LIB})
+add_library(State_NRZ_S ${SOURCE_LIB})
+add_library(State_RZ_AMI ${SOURCE_LIB})
+add_library(State_Unipolar_RZ ${SOURCE_LIB})
+
+#set(SOURCE_LIB State_Bipolar_RZ.cpp)
+#set(SOURCE_LIB State_NRZ_L.cpp)
+#set(SOURCE_LIB State_NRZ_M.cpp)
+#set(SOURCE_LIB State_NRZ_S.cpp)
+#set(SOURCE_LIB State_RZ_AMI.cpp)
+#set(SOURCE_LIB State_Unipolar_RZ.cpp)
+#add_library(State_Bi_f_L STATIC ${SOURCE_LIB})
+#add_library(BaseState STATIC ${SOURCE_LIB})
+#add_library(Coder STATIC ${SOURCE_LIB})
+
+									# старее указаной, произайдёт аварийный выход.
+
+add_executable(main ${SOURCE_EXE})
+
+target_link_libraries(main Facade)
+

@@ -1,0 +1,15 @@
+#include "Facade.h"
+
+void Facade::TotalWork(std::string path_tothe_file)
+{
+  std::ifstream file;
+  file.open(path_tothe_file.c_str());
+  std::string method;
+  std::string sequence;
+  while (file>>method)
+  {
+  file >> sequence;
+  _coder.GetWork(method,sequence);
+  std::cout << std::endl;
+  }
+};

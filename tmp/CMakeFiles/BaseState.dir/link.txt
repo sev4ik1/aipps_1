@@ -1,0 +1,2 @@
+/usr/bin/ar cr libBaseState.a  CMakeFiles/BaseState.dir/Coder.cpp.o
+/usr/bin/ranlib libBaseState.a

@@ -1,0 +1,2 @@
+/usr/bin/ar cr libState_RZ_AMI.a  CMakeFiles/State_RZ_AMI.dir/Coder.cpp.o
+/usr/bin/ranlib libState_RZ_AMI.a

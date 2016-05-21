@@ -1,0 +1,2 @@
+/usr/bin/ar cr libCoder.a  CMakeFiles/Coder.dir/Coder.cpp.o
+/usr/bin/ranlib libCoder.a

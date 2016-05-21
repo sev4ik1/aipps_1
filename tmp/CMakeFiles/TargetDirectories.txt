@@ -1,0 +1,3 @@
+/home/misha/C++/AIPPS/AIPPS2.0/tmp/CMakeFiles/Coder.dir
+/home/misha/C++/AIPPS/AIPPS2.0/tmp/CMakeFiles/Facade.dir
+/home/misha/C++/AIPPS/AIPPS2.0/tmp/CMakeFiles/main.dir

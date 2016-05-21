@@ -1,0 +1,2 @@
+/usr/bin/ar cr libFacade.a  CMakeFiles/Facade.dir/Facade.cpp.o
+/usr/bin/ranlib libFacade.a

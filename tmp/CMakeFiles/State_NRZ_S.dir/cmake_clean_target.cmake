@@ -1,0 +1,3 @@
+FILE(REMOVE_RECURSE
+  "libState_NRZ_S.a"
+)
